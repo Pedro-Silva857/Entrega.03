@@ -1,3 +1,4 @@
+// probando git
 const containerProductos = document.getElementById('containerProducts');
 const modal = document.getElementById('ventana-modal');
 const carrito = document.getElementById('carrito');
