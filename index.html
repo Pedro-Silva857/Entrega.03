@@ -17,13 +17,22 @@
         <a href="#contact">Contacto</a>
         <a href="#offer">Ofertas</a>
         <a href="#about">Nosotros</a>
-        <a href="#cart" id="carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <a href="#cart" id="carrito">
+            <div class="contenedor-carrito">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <div id="productos-carrito" class="count-products">0</div>
+            </div>
+        </a>
         <a href="javascript:void(0);" id="icon-menu" class="icon">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
     <h1 class="title">Funkope</h1>
+    <div class="buscar-contenedor">
+         <input type="text" class="buscar-input" id="input-filtro" placeholder="Buscar producto ..."/>
+         <button id="filtro" class="boton-standar">Buscar</button>
+    </div>
 
     
     <div id="ventana-modal" class="modal">
@@ -36,7 +45,9 @@
             <div class="modal-body"></div>
             <div class="modal-footer">
                 <h3 id="total"></h3>
-                <h5 id="pagar" class="boton-pagar">Pagar</h5>
+                <a id="pagar-compra" class="boton-pagar" href="#">pagar</a>
+                <a id="vaciar-carrito" class="boton-pagar" href="#">vaciar</a>
+
             </div>
         </div>
     </div>
@@ -46,7 +57,7 @@
     </div>
 
 </div>
-<script src="./js/productos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
 <script src="./js/app.js"></script>
 </body>
 

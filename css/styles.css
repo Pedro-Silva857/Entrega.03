@@ -13,6 +13,8 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif; 
+    background-image: url('/img/fondo.jpg');
+    background-clip: cover;
 }
 
 
@@ -82,10 +84,65 @@ body {
     }
 }
 
+.count-products {
+    background-color: #35939c;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.boton-standar {
+    position: absolute;
+    left: 95%;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #35939c;
+    padding: 10px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.container-pro .card .boton:hover,
+.boton-standar:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #35939c;
+}
+
+.buscar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar-input {
+    position: absolute;
+    left: 83.5%;
+    width: 242px;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
 .title {
     text-align: center;
-    font-size: 40px;
-    color: #35939c;
+    font-size: 50px;
+    color: #046c76;
     margin-top: 100px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -119,6 +176,8 @@ body {
     background-color: #c4f0f5;
 }
 
+
+
 .container-pro .card img {
     width: 220px;
     height: 220px;
@@ -136,6 +195,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin: 8px auto;
+    background-color: #a5eff6;
 }
 
 .container-pro .card .boton {
@@ -288,4 +348,20 @@ body {
 .eliminar-producto:hover {
     color: white;
     background-color: red;
+}
+
+.boton-carrito {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
